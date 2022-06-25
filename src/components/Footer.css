@@ -14,8 +14,7 @@
 }
 
 /* Queries */
-
-@media (max-width: 415px) {
+@media (max-width: 784px) {
     .footer p {
         margin-left: 40px;
         margin-right: 40px;
@@ -28,3 +27,12 @@
         margin-right: 40px;
     }
 }
+
+@media (max-width: 415px) {
+    .footer p {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+}
+
+
