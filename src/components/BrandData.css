@@ -85,7 +85,29 @@
     }
 
     .brand_info_primary p {
+        margin: 0 40px 0 40px;
+    }
+}
+
+@media (max-width: 583px) {
+    .brand_info_container {
+        display: inline-block;
+    }
+
+    .brand_info_logo {
+        margin: 0 auto;
+        margin-top: 60px;
+    }
+
+    .brand_info_primary_container h2 {
         margin-left: 40px;
-        margin-right: 40px;
+    }
+
+    .brand_info_primary h3 {
+        margin-left: 40px;
+    }
+
+    .brand_info_primary p {
+        margin: 0 40px 0 40px;
     }
 }
