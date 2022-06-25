@@ -1,0 +1,67 @@
+.navbar {
+    height: 100px;
+    background-color: rgb(246, 246, 246);
+    box-shadow: 0px 1px 20px #888888;
+}
+
+.navbar_logo {
+    font-weight: 500;
+    margin-left: 30px;
+    font-size: 40px;
+    background-color: rgb(246, 246, 246);
+}
+
+.none {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar_icons_container {
+    margin-right: 30px;
+    background-color: rgb(246, 246, 246);
+}
+
+.navbar_icons {
+    font-size: 55px;
+    background-color: rgb(246, 246, 246);
+    box-shadow: 1px 6px 6px #888888;
+    padding: 10px;
+    border-radius: 40%;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.navbar_home {
+    background-color: rgb(246, 246, 246);
+}
+
+.navbar_icons:hover {
+    box-shadow: 1px 6px 6px rgb(255, 203, 203);
+}
+
+/* Common Properties */
+
+.navbar,
+.navbar_icons_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* .navbar_icons {
+    display: flex;
+    align-items: center;
+} */
+
+
+/* QUERIES */
+
+@media (max-width: 415px) {
+    .display {
+        display: none;
+    }
+
+    .navbar {
+        box-shadow: none;
+    }
+}

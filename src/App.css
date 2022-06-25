@@ -1,38 +1,47 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "sans";
+    background-color: rgb(251, 251, 251);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.brands {
+    margin-top: 60px;
+    margin-left: 30px;
+    font-weight: 400;
+    color: rgb(78, 78, 78);
+    letter-spacing: 4px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.component_data {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* QUERIES */
+
+@media (max-width: 1450px) {
+    .component_data {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
-.App-link {
-  color: #61dafb;
+@media (max-width: 1200px) {
+    .component_data {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media (max-width: 1000px) {
+    .component_data {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 770px) {
+    .component_data {
+        grid-template-columns: 1fr;
+    }
 }

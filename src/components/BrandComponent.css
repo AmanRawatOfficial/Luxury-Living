@@ -1,0 +1,100 @@
+.brand {
+    height: 340px;
+    width: 320px;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    margin: 60px 0 10px 30px;
+    box-shadow: 0px 2px 18px rgb(209, 209, 209);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+/* hover animations */
+
+.brand:hover {
+    transform: translateY(-1.3rem)
+}
+
+.brand_logo:hover {
+    transform: scale(1.2);
+}
+
+.brand > p {
+    font-weight: 400;
+    margin-bottom: 10px;
+    align-self: flex-start;
+    margin-left: 13px;
+    margin-top: 10px;
+}
+
+.brand_info {
+    height: 310px;
+    width: 290px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 2px 8px rgb(213, 213, 213);
+    border-radius: 9px;
+    margin-bottom: 13px;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand_logo {
+    background-color: white;
+    transition: all 0.3s;
+}
+
+/* QUERIES */
+
+@media (max-width: 1000px) {
+    .brand {
+        height: 380px;
+        width: 360px;
+    }
+
+    .brand > p {
+        margin-left: 33px;
+    }
+
+}
+
+@media (max-width: 770px) {
+    .brand {
+        width: 92%;
+    }
+
+    .brand_info {
+        width: 500px;
+    }
+
+    .brand > p {
+        margin-left: 93px;
+    }
+}
+
+@media (max-width: 583px) {
+    .brand {
+        width: 90%;
+    }
+
+    .brand > p {
+        margin-left: 23px;
+    }
+
+    .brand_info {
+        width: 90%;
+    }
+}
+
+@media (max-width: 415px) {
+    .brand {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}

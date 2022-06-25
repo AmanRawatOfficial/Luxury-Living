@@ -1,0 +1,90 @@
+
+.hotel_list_heading {
+    margin-left: 60px;
+    margin-top: 25px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.hotel_list_second_heading {
+    margin-left: 60px;
+    margin-bottom: 10px;
+}
+
+.hotel_list_brand, .hotel_list_number {
+    color: rgb(0, 0, 255);
+}
+
+.list_item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 10px;
+    box-shadow: 0px 2px 8px rgb(214, 214, 214);
+}
+
+.list_item_info {
+    display: flex;
+    align-items: center;
+}
+
+.list_item_info div {
+    display: flex;
+    align-items: center;
+}
+
+.list_item_info_heading {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.list_item_info_description {
+    margin-left: 60px;
+}
+
+.list_icons {
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.list_icons > * {
+    box-shadow: 0px 2px 8px rgb(208, 208, 208);
+    border-radius: 50%;
+    padding: 10px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.red {
+    color: red;
+}
+
+
+/* Queries */
+
+@media (max-width: 415px) {
+    .list_item {
+        display: inline-block;
+        width: 78%;
+    }
+
+    .hotel_list {
+        margin-left: -20px;
+    }
+
+    .list_icons {
+        margin: 20px 0px 20px 60px;
+    }
+
+    .list_item_info div {
+        display: inline-block;
+    }
+
+    .list_item_info_description {
+        margin-left: 0px;
+    }
+}
